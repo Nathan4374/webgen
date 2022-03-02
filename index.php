@@ -127,13 +127,13 @@ fclose($file_pointer);
 
 
 
-         echo json_encode(Array("status"=>"OK","message"=>"File created","url"=>"https://techdev000.heroku.com/".$csv),JSON_PRETTY_PRINT);
+         echo json_encode(Array("status"=>"OK","message"=>"File created","url"=>"https://techdev000.herokuapp.com/".$csv),JSON_PRETTY_PRINT);
      
      }else{
 $uploaded= file_put_contents("files/".md5($filename).".".$fileextention,$_GET["data"]);
      if($uploaded){
          
-         echo json_encode(Array("status"=>"OK","message"=>"File created","url"=>"https://techdev000.heroku.com/file.php?name=".$filename."&type=".$fileextention),JSON_PRETTY_PRINT);
+         echo json_encode(Array("status"=>"OK","message"=>"File created","url"=>"https://techdev000.herokuapp.com/file.php?name=".$filename."&type=".$fileextention),JSON_PRETTY_PRINT);
      }else{
      echo json_encode(Array("status"=>0,"message"=>"Uploading error"),JSON_PRETTY_PRINT);
          
