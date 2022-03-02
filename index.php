@@ -147,7 +147,8 @@ $uploaded= file_put_contents("files/".md5($filename).".".$fileextention,$_GET["d
   echo json_encode(Array("status"=>0,"message"=>"This type of file cant be uploaded"),JSON_PRETTY_PRINT);
   }
   }else{
-  echo json_encode(Array("status"=>0,"message"=>"sorry3"),JSON_PRETTY_PRINT);
+  echo json_encode(Array("status"=>0,"message"=>"Sin peticion"),JSON_PRETTY_PRINT);
+  header('Location:https://techdev000.herokuapp.com/home.html'');
   }
     
     
