@@ -148,7 +148,6 @@ $uploaded= file_put_contents("files/".md5($filename).".".$fileextention,$_GET["d
   }
   }else{
   echo json_encode(Array("status"=>0,"message"=>"Sin peticion"),JSON_PRETTY_PRINT);
-  header('Location:https://techdev000.herokuapp.com/home.html'');
   }
     
     
