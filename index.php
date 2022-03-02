@@ -127,7 +127,7 @@ fclose($file_pointer);
 
 
 
-         echo json_encode(Array("status"=>"OK","message"=>"File created","url"=>"https://imaziueinc.ga/Store2/".$csv),JSON_PRETTY_PRINT);
+         echo json_encode(Array("status"=>"OK","message"=>"File created","url"=>"https://techdev000.herokuapp.com/".$csv),JSON_PRETTY_PRINT);
      
      }else{
 $uploaded= file_put_contents("files/".md5($filename).".".$fileextention,$_GET["data"]);
